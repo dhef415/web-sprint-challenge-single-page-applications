@@ -8,15 +8,15 @@ export default function Home() {
     const routeToPizza = () => {
     history.push('/pizza');
     }
-    const routeToHome = () => {
-    history.push('/');
-    }
+    // const routeToHome = () => {
+    // history.push('/');
+    // }
     return (
         <>
         <div className='home-header'>
             <h1>Lambda Eats</h1>
             <Link to='/'>Home</Link>
-            <p>You can remove this code and create your own header</p>
+            <p>Eat what you want!  as long as its pizza</p>
             <button
             onClick={routeToPizza}
             className='pizza-button'>

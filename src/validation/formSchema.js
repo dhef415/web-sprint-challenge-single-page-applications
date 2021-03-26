@@ -7,9 +7,9 @@ export default yup.object().shape({
     .min(3,'Name must be at least 3 chars long'),
     size: yup
     .string()
-    .oneOf(['small', 'medium', 'large'],'Size is required'),
+    .oneOf(['','small', 'medium', 'large'],'Size is required'),
     sauce: yup
-    .string()
+    .object()
     .oneOf(['red-sauce', 'garlic', 'bbq-sauce', 'spinach-alfredo'], 'Sauce is required'),
     pepperoni: yup.boolean(),
     sausage: yup.boolean(),
